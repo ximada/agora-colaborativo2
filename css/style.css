@@ -1,0 +1,333 @@
+* {
+    box-sizing: border-box;
+}
+h5 {
+    color: #390f3f
+}
+
+
+.nopadding {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(225, 209, 250)
+}
+
+.littlefont {
+    font-size: 14px;
+}
+
+a{
+    color: inherit;
+}
+
+a:hover{
+    color: inherit;
+}
+
+.icon {
+    margin: 10px;
+    font-size: 30px;
+    color: #5f4663;
+}
+
+.btn-arrow{
+    border: none;
+    color: #5f4663;
+    background-color: #f7f7f7
+}
+
+.search-black {
+  border: 2px #390f3f75 solid;
+    
+}
+
+.search-black:focus {
+    border: 2px #390f3f75 solid;
+  }
+
+.btn-black {
+    color: rgb(190, 162, 58);
+    border: 2px #390f3f75 solid;
+    background-color: white;
+}
+
+#profile-right-sidebar {
+    background-color: rgba(109, 0, 94, 0.212);
+    color: black;
+}
+
+#left-sidebar {
+    background-color: rgba(109, 0, 94, 0.212);
+    color: black;
+}
+
+#right-sidebar {
+    background-color: rgba(109, 0, 94, 0.212);
+    color: black;
+}
+
+.img {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.littlebook {
+    width: 29%;
+    height: auto;
+    margin: 5px;
+}
+/*images friends*/
+.img-radius {
+    border-radius: 50%;
+}
+
+.feed-book {
+    width: 160px;
+}
+
+.bookresume {
+    font-size: 15px;
+    width: 10%;
+}
+
+.star-rating {
+    line-height: 32px;
+    font-size: 1.25em;
+}
+
+.notvisible {
+    visibility: hidden;
+}
+
+.star-rating .fa-star {
+    color: rgb(255, 225, 0);
+}
+
+.square {
+    background-color: rgb(212, 212, 212);
+    height: 150px;
+}
+
+.card-header {
+    background-color: #4a274e;
+    color: #5B3E83;
+    width: 100%;
+}
+
+.card-header a {
+    color: white;
+}
+
+
+.btn-purple:hover {
+    background-color: #390f3f88;
+    color: white;
+}
+
+.btn-purple {
+    border-radius: 5px;
+    background-color: rgba(212, 166, 1, 0.60);
+    padding: 5px;
+    color: white;
+}
+
+.purple-input {
+    border-radius: 4px;
+    border: 2px #390f3f34 solid;
+    background-color: #ddcedf3a;
+    color:#390f3f94
+}
+
+.purple-input:focus {
+    border-radius: 4px;
+    border: 2px #390f3f75 solid;
+    outline: none;
+}
+
+
+.form-control {
+    border-radius: 4px;
+    border: 2px #390f3f34 solid;
+    background-color: #ddcedf3a;
+    color: rgb(0, 0, 0);
+}
+
+.form-control:focus {
+    border-radius: 4px;
+    border: 2px #390f3f75 solid;
+    outline: none;
+}
+
+
+.btn-purpleback {
+    background-color: #390f3f8e;
+    color: white;
+}
+
+.btn-purpleback:hover {
+    border: 1px solid #390f3f75;
+    border-radius: 4px;
+    color: #390f3ffb;
+    background-color: white
+}
+
+.bookresume {
+    width: 100%;
+    border: 1px solid #390f3f75;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.comments {
+    border: 1px solid #390f3f75;
+    border-radius: 10px;
+    background-color: #e2dc8b3d;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.littleprofile {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.btn-nobackground{
+    background-color: rgba(255, 127, 80, 0);
+    font-size: 20px;
+}
+
+.like{
+    color: grey;
+}
+
+.love{
+    color: grey
+}
+/*Seccion Login*/
+
+
+
+.login-section {
+ height:100vh;
+    background-image: url(../assets/images/login4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.input-group-prepend{
+    width: 50px;
+}
+
+.users {
+    background-color: rgba(151, 53, 138, 0.1);
+    height: 70vh;
+}
+
+
+
+.input-group-purple {
+    background-color: rgba(255, 255, 255, 0.493);
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 7vh;
+    border:  #390f3f75 1px solid
+}
+
+.fa-user,
+.fa-unlock-alt {
+    color:  #390f3f75;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 15px;
+    
+
+}
+
+.img-user {
+    width: 50%;
+    border-radius: 50%;
+    margin-left: 25%;
+    border:  #390f3f75 3px solid
+}
+
+.linkforgot{
+    color: #ffffff;
+}
+
+.backgroundpurple{
+    background-color: rgba(129, 28, 116, 0.3);
+}
+
+/*images friends*/
+.img-radius {
+    border-radius: 50%;
+}
+
+.profileimg{
+    border-radius: 50%;
+    width: 100%;
+}
+
+.navbarpurple{
+    background-color:  #390f3f75 ;
+    padding:13px;
+}
+
+.username {
+    font-size: 30px;
+}
+
+
+/*sección footer*/
+.footer-a {
+    color: #7e0069;
+    font-weight: bolder;
+}
+
+/*Vista splash*/
+#splash-view {
+    background-image: url(../assets/images/book-splash.jpg);
+    background-size: cover;
+    height: 100vh;
+
+}
+/* Splash */
+
+#splashscreen {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Agregar imagen */
+.thumb{
+    height: 3000px;
+    border: 1px solid #000;
+    margin: 10px 5px 0 0;
+}
+
+.littlepicture{
+    width: 40%;
+    height: auto;
+    border: #7e0069 3px solid
+}
+/*Media query para la imagen Mobile*/
+@media screen and (max-width: 500px) {
+    .profileimg  {
+         width: 30%;
+        left: 30%; 
+         
+     }
+    
+};
+
