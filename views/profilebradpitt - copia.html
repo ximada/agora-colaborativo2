@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-black bg-faded p-2">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+            <img src="assets/images/logo.png" height="50px" width="45%">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0 col-md-7 push-md-4 ">
+                <input class="form-control mr-sm-2 search-black" type="text" placeholder="Search">
+                <button class="btn btn-black my-2 my-sm-0" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+            </form>
+            <ul class=" nav navbar-nav col-md-4 push-md-1">
+                <li class=" nav-item icon">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                </li>
+                <li class=" nav-item icon">
+                    <i class="fa fa-university" aria-hidden="true"></i>
+                </li>
+                <li class=" nav-item icon">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </li>
+                <li class="d-sm-none  d-none d-md-block">
+                    <a href="profileangelina.html"> <img src="assets/images/perfil1.jpg" alt="" class="img-radius mt-3" width="60%"></a>
+                </li>
+                <li> 
+                    <div class="btn-group mt-3">
+                       <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                         <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Registro de actividad</button>
+                            <button class="dropdown-item" type="button">Configuración</button>
+                            <button class="dropdown-item" type="button" onclick="logout()">Salir</button>
+                         </div>
+                    </div>
+                    </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 push-md-0  col-sm-12 navbarpurple">
+                <ul class="nav col-md-2 push-md-5 mb-3">
+                    <li>
+                        <button class="btn btn-purple ml-3 text-uppercase username">
+                            Brad Pitt</button>
+                    </li>
+                </ul>
+                <ul class="nav col-md-3 push-md-3">
+                    <li>
+                        <button class="btn btn-purpleback ml-3">
+                            <span class="d-none d-md-block d-lg-block d-xl-block">Sobre mí</span>
+                            <span class="d-block d-sm-block  d-md-none d-lg-none d-xl-none">
+                                <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-purpleback ml-3">
+                            <span class="d-none d-md-block d-lg-block d-xl-block">Mis libros</span>
+                            <span class="d-block d-sm-block  d-md-none d-lg-none d-xl-none">
+                                <i class="fa fa-bookmark" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="btn btn-purpleback ml-3">
+                            <span class="d-none d-md-block d-lg-block d-xl-block">Mis fotos</span>
+                            <span class="d-block d-sm-block  d-md-none d-lg-none d-xl-none">
+                                <i class="fa fa-camera" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </li>
+                    <li>
+                        <button id="brad" onclick="friendBrad()" class="btn btn-purpleback ml-3">
+                            <span class="d-none d-md-block d-lg-block d-xl-block">Agregar a Amigos
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </span>
+                            <span class="d-block d-sm-block  d-md-none d-lg-none d-xl-none">
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div id="profile" class="col-md-12 col-sm-12 mt-3 mb-3">
+                <img src="assets/images/boy.jpg" class="col-md-2 m-1 profileimg" alt="">
+                <img src="assets/images/boy2.jpg" class="col-md-2 m-3 profileimg d-none d-lg-inline-block d-md-inline-block" alt="">
+                <img src="assets/images/boy3.jpg" class="col-md-2 m-3 profileimg d-none d-lg-inline-block d-md-inline-block" alt="">
+                <img src="assets/images/boy4.jpg" class="col-md-2 m-3 profileimg d-none d-lg-inline-block d-md-inline-block" alt="">
+                <img src="assets/images/boy5.jpg" class="col-md-2 m-3 profileimg d-none d-lg-inline-block d-md-inline-block" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div id="main" class="col-md-8 col-sm-12">
+    
+                <div class="card mt-2 mb-2 col-sm-12" id="main-headig">
+                    <div class="card-header">
+                        <ul class="nav nav-tabs card-header-tabs pull-right" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#post" role="tab" aria-controls="post" aria-selected="true">
+                                    <i class="fa fa-pencil" aria-hidden="true"></i>
+                                    <span class="d-none d-lg-inline-block ">Comparte tus pensamientos</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#review" role="tab" aria-controls="review" aria-selected="false">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                    <span class="d-none d-lg-inline-block ">Recomiéndale un libro</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body m-1">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="post" role="tabpanel" aria-labelledby="post-tab">
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="2" id="comment" placeholder="¿Qué estás pensando?"></textarea>
+                                    <button class="btn btn-sm btn-purple mt-3 ml-1" type="button" data-toggle="collapse" data-target="#shareImage" aria-expanded="false"
+                                        aria-controls="shareImage">¿Quieres colocar una imagen?</button>
+                                    <div class="collapse" id="shareImage">
+                                        <span class="ml-2 littlefont">Coloca la url de tu imagen aquí:</span>
+                                        <input type="file" class="btn-purple" id="files" name="files[]" />
+                                    </div>
+
+                                </div>
+                                <button class="btn btn-purpleback mt-4 ml-2 mb-1" id="bt-post">Postear</button>
+                            </div>
+                            <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+
+                                <span class="ml-4 littlefont">Coloca aquí el ISBN del libro</span>
+                                <input type="text" id="isbn-input" class="purple-input input-group-lg">
+                                <button class="btn btn-sm btn-purple" type="button" data-toggle="collapse" data-target="#bookInfo" aria-expanded="false"
+                                    aria-controls="bookInfo" id="search">¡Buscar!</button>
+                                <div class="collapse ml-4 mt-4" id="bookInfo">
+                                    <div class="titles text-center mb-3">
+                                        <div id="title" class=" d-inline-block font-weight-bold">The Title</div>
+                                        <div id="author" class=" d-inline-block font-italic littlefont">The Author</div>
+                                    </div>
+                                    <img src="#" id="cover" class="pull-left m-4 mb-1">
+                                    <div id="description" class="mt-4 m-3 littlefont">The description</div>
+                                </div>
+                                <div>
+                                    <span class="littlefont font-italic text-center"> ¿Cuántas estrellas crees que merece?</span>
+                                    <div class="star-rating mb-1 text-center">
+                                        <span class="fa fa-star-o" data-rating="1"></span>
+                                        <span class="fa fa-star-o" data-rating="2"></span>
+                                        <span class="fa fa-star-o" data-rating="3"></span>
+                                        <span class="fa fa-star-o" data-rating="4"></span>
+                                        <span class="fa fa-star-o" data-rating="5"></span>
+                                        <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" id="review-comment" placeholder="¿Por qué crees que debería de leerlo?"></textarea>
+                                </div>
+                                <button class="btn btn-purpleback mt-2 ml-4 mb-3" id="post-review">Postear</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                             
+
+                <div id="containerpost">
+                    <div class="card border-light  col-sm-12 mb-3 mt-1s" id="readingpost">
+                        <div class="card-body m-1">
+                            <h6 class="card-title">
+                                <h5 class=" font-weight-bold  ml-2 mt-2 mr-2 d-inline">Brad</h5>leyó:
+                                <span class="littlefont pull-right  mr-2 text-muted">Justo ahora</span>
+                            </h6>
+                            <div class="card-text d-flex justify-content-start mt-3">
+                                <div class=" d-inline-block">
+                                    <img src="assets/images/30.jpg" class="feed-book m-1 mr-1 ml-3 d-none d-md-block d-lg-block" id="card-cover">
+                                </div>
+                                <div class="d-inline-block m-1 ml-4 mr-4">
+                                    <h5 class=" font-weight-bold" id="card-title">The Mirror Thief</h5>
+                                    <h6 class=" font-italic mb-2" id="card-author"> Martin Seay </h6>
+                                    <button class=" btn btn-purple mb-1 btn-sm">Añadir a mi listas</button>
+                                    <div class="star-rating mb-1">
+                                        <span class="fa fa-star-o" data-rating="1"></span>
+                                        <span class="fa fa-star-o" data-rating="2"></span>
+                                        <span class="fa fa-star-o" data-rating="3"></span>
+                                        <span class="fa fa-star-o" data-rating="4"></span>
+                                        <span class="fa fa-star-o" data-rating="5"></span>
+                                        <input type="hidden" name="whatever1" class="rating-value" value="2.56">
+                                    </div>
+                                    <button class="btn btn-purpleback btn-sm" type="button" data-toggle="collapse" data-target="#card-description" aria-expanded="false"
+                                        aria-controls="card-description">Ver resumen</button>
+                                    <span class="bookresume littlefont collapse" id="card-description">
+                                        The core story is set in Venice in the sixteenth century, when the famed makers of Venetian glass were perfecting one of the old world's most wondrous inventions: the mirror. An object of glittering yet fearful fascination—was it reflecting simple reality, or something more spiritually revealing?—the Venetian mirrors were state of the art technology and subject to industrial espionage by desirous sultans and royals world-wide. But for any of the development team to leave the island was a crime punishable by death. 
+                                    </span>
+
+                                    <div id="card-review" class="comment d-block mt-4">
+                                        Este es un libro increíble, emocionante e inteligente, me da dolor de cabeza pensar en la cantidad de investigación que Martin debe haber hecho para dar vida a estas tres eras (el libro sigue a los personajes en tres períodos distintos). No quiero echar a perder demasiado, ya que creo que parte de la sorpresa es descubrir el misterio del libro en sí, PERO diré esto: lo que realmente me llamó la atención, incluso más allá del misticismo surrealista y la bella escritura, fue el de Martin. hábil examen del trauma y cómo se forma
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer text-muted">
+                                            <button class="btn btn-nobackground like"><i class="fa fa-thumbs-up" aria-hidden="true"></i></button>
+                                            <button class="btn btn-nobackground love"> <i class="fa fa-gratipay" aria-hidden="true"></i></button>
+                                <div id="comment-section">
+                                    <div id="coment-user" class="comments">
+                                        <span class=" font-weight-bold d-block littlefont">Jennifer dice:</span>
+                                        <img src="assets/images/profilefriends.png" class=" littleprofile" alt="">
+                                        <span id="comment-text">Maravilloso libro también!</span>
+                                    </div>
+                                </div>
+                               
+                                <div class="form-group">
+                                    <label for="comment" class=" mb-3">Añade un comentario:</label>
+                                    <textarea class="form-control" rows="1" id="card-comment"></textarea>
+                                    <button class="btn btn-sm btn-purpleback mt-3" id="card-submitcomment">Postear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card border-light  col-sm-12 mb-3 mt-1s" id="simplepost">
+                        <div class="card-body m-1">
+                            <h6 class="card-title">
+                                <h5 class=" font-weight-bold  ml-2 mt-2 mr-2 d-inline">Brad</h5>posteó:
+                                <span class="littlefont pull-right  mr-2 text-muted">Justo ahora</span>
+                            </h6>
+                                    <div id="post-description" class="comment mt-4">
+                                     Fui a la cena de club de lectores de libros de espías y tuvimos una dinámica increíble. Les recomiendo unirse al grupo.
+                                    </div>
+                                    <output id="list" class="d-inline"></output>
+
+                                </div>
+                                <div class="card-footer text-muted">
+                                    <button class="btn btn-nobackground like">
+                                        <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                                    </button>
+                                    <button class="btn btn-nobackground love">
+                                        <i class="fa fa-gratipay" aria-hidden="true"></i>
+                                    </button>
+                                    <div id="comment-section-post">
+                                        <div id="coment-user-post" class="comments">
+                                            <span class=" font-weight-bold d-block littlefont">Jennifer dice:</span>
+                                            <img src="assets/images/profilefriends.png" class=" littleprofile" alt="">
+                                            <span id="comment-text-post">Me uniré de inmediato.</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="comment" class=" mb-3">Añade un comentario:</label>
+                                        <textarea class="form-control" rows="1" id="card-comment-post"></textarea>
+                                        <button class="btn btn-sm btn-purpleback mt-3" id="card-submitcomment-post" onclick="()">Postear</button>
+                                    </div>
+                                </div>
+                            </div>
+
+            
+                        </div>
+                    </div>
+            <div id="profile-right-sidebar" class="m-3 ml-3 col-md-3 d-sm-none  d-none d-md-block text-center">
+                <div id="sectionM" class="m-1">
+                    <h5 class=" text-uppercase mt-3">Mis Amigos</h5>
+                    <div class="d-inline-block">
+                        <a href="profileangelina.html"><img id="angie" src="assets/images/friend15.jpg" alt="" class=" d-inline-block littlebook img-radius"></a>
+                        <img src="assets/images/friend16.jpg" alt="" class=" d-inline-block littlebook img-radius">
+                        <img src="assets/images/friend17.jpg" alt="" class=" d-inline-block littlebook img-radius">
+                        <img src="assets/images/friend18.jpg" alt="" class=" d-inline-block littlebook img-radius">
+                        <img src="assets/images/friend19.jpg" alt="" class=" d-inline-block littlebook img-radius">
+                        <img src="assets/images/friend20.jpg" alt="" class=" d-inline-block littlebook img-radius">
+                        <button class="btn mt-4 mb-4">Ver más</button>
+                    </div>
+                    <div id="sectionJ">
+                        <h5 class=" text-uppercase mt-4">Mis estanterías</h5>
+                        <h6 class=" text-uppercase mt-4">Mis Libros Favoritos</h6>
+                        <div class="">
+                            <img src="assets/images/31.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/32.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/37.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/34.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/35.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/36.jpg" alt="" class=" d-inline-block littlebook">
+                        </div>
+                        <h6 class=" text-uppercase mt-4">Libros que estoy leyendo</h6>
+                        <div class="">
+                            <img src="assets/images/38.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/39.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/40.jpg" alt="" class=" d-inline-block littlebook">
+
+                        </div>
+                        <h6 class=" text-uppercase mt-4">Libros que cambiaron mi vida</h6>
+                        <div class="">
+                            <img src="assets/images/41.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/42.jpg" alt="" class=" d-inline-block littlebook">
+                            <img src="assets/images/44.jpg" alt="" class=" d-inline-block littlebook">
+                        </div>
+                        <a href="#">Mirar todas mis estanterias</a>
+                    </div>
+                    <div id="sectionK" class=" mt-5">
+                        <h5 class=" text-uppercase">Comunidades en las que participo</h5>
+                        <img src="assets/images/bc1.jpg" alt="" class="img-radius d-inline-block littlebook">
+                        <img src="assets/images/bc2.png" alt="" class="img-radius d-inline-block littlebook">
+                        <img src="assets/images/bc3.jpg" alt="" class="img-radius d-inline-block littlebook">
+                    </div>
+                    <div id="L" class=" mt-5">
+                        <h5 class=" text-uppercase">Libros que quiero intercambiar</h5>
+                        <img src="assets/images/45.jpg" alt="" class=" d-inline-block littlebook">
+                        <img src="assets/images/46.jpg" alt="" class=" d-inline-block littlebook">
+                        <img src="assets/images/17.jpg" alt="" class=" d-inline-block littlebook">
+                        <button class="btn btn-sm btn-purple mt-4">Ir al mercado</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+</body>
+
+</html>
